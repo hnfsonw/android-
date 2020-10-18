@@ -1,0 +1,40 @@
+邮箱密码：UDhnf1152
+
+
+git仓库：ssh://git.uditech.org/Robot/SWJ/SWJAPK-production-test.git
+
+
+git init 
+
+git remote add origin git@github.com:XXXX/nothing2.git
+
+git fetch origin dev（dev为远程仓库的分支名）
+
+git checkout -b dev(本地分支名称) origin/dev(远程分支名称)
+
+git pull origin dev(远程分支名称)
+
+
+
+1. git diff 文件名 ----------》比对远程仓库中的该文件与本地的该文件内容有什么不同
+2.git reset --hard HEAD^-------------->把版本回退到上一个版本  HEAD表示当前版本  HEAD^表示上一个版本  以此类推
+3.git reset --hard commit_id---------->把版本回退到某一个版本号
+4.git reflog ------------------------->可以查看每一条执行过的log命令
+5.git checkout --文件名  -------------》可以把在暂存区或者工作区的修改全部撤销
+6.git reset HEAD 文件名 -------------->表示把当前版本暂存区的修改回退到工作区
+7.git remote add origin ssh://(仓库地址)----------------->把本地已有的仓库和远程仓库关联
+8.git checkout -b dev ----------------->创建一个叫做dev的分支并切换到该分支
+9.git merge dev ---------------------->把dev分支合并到当前分支
+
+
+git使用：
+ 1：ssh-keygen-t rsa-C "your_email@youremail.com" 复制粘贴公钥到github的SSH key中
+ 2：git config --global user.name "hnfsnow"
+ 3：git config --global user.email "1029140360@qq.com":
+
+ Access Token:ca58a58ebad9f7ce430b12275dcb099f9a9a63f7  
+ push的时候需要输入账号密码，账号是github的账号，密码是这个tokens,需要在github的setting-deloper中设置
+
+
+
+
