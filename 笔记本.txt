@@ -1,39 +1,39 @@
-ÓÊÏäÃÜÂë£ºUDhnf1152
 
 
-git²Ö¿â£ºssh://git.uditech.org/Robot/SWJ/SWJAPK-production-test.git
+
+gitä»“åº“ï¼šssh://git.uditech.org/Robot/SWJ/SWJAPK-production-test.git
 
 
 git init 
 
 git remote add origin git@github.com:XXXX/nothing2.git
 
-git fetch origin dev£¨devÎªÔ¶³Ì²Ö¿âµÄ·ÖÖ§Ãû£©
+git fetch origin devï¼ˆdevä¸ºè¿œç¨‹ä»“åº“çš„åˆ†æ”¯åï¼‰
 
-git checkout -b dev(±¾µØ·ÖÖ§Ãû³Æ) origin/dev(Ô¶³Ì·ÖÖ§Ãû³Æ)
+git checkout -b dev(æœ¬åœ°åˆ†æ”¯åç§°) origin/dev(è¿œç¨‹åˆ†æ”¯åç§°)
 
-git pull origin dev(Ô¶³Ì·ÖÖ§Ãû³Æ)
-
-
-
-1. git diff ÎÄ¼şÃû ----------¡·±È¶ÔÔ¶³Ì²Ö¿âÖĞµÄ¸ÃÎÄ¼şÓë±¾µØµÄ¸ÃÎÄ¼şÄÚÈİÓĞÊ²Ã´²»Í¬
-2.git reset --hard HEAD^-------------->°Ñ°æ±¾»ØÍËµ½ÉÏÒ»¸ö°æ±¾  HEAD±íÊ¾µ±Ç°°æ±¾  HEAD^±íÊ¾ÉÏÒ»¸ö°æ±¾  ÒÔ´ËÀàÍÆ
-3.git reset --hard commit_id---------->°Ñ°æ±¾»ØÍËµ½Ä³Ò»¸ö°æ±¾ºÅ
-4.git reflog ------------------------->¿ÉÒÔ²é¿´Ã¿Ò»ÌõÖ´ĞĞ¹ıµÄlogÃüÁî
-5.git checkout --ÎÄ¼şÃû  -------------¡·¿ÉÒÔ°ÑÔÚÔİ´æÇø»òÕß¹¤×÷ÇøµÄĞŞ¸ÄÈ«²¿³·Ïú
-6.git reset HEAD ÎÄ¼şÃû -------------->±íÊ¾°Ñµ±Ç°°æ±¾Ôİ´æÇøµÄĞŞ¸Ä»ØÍËµ½¹¤×÷Çø
-7.git remote add origin ssh://(²Ö¿âµØÖ·)----------------->°Ñ±¾µØÒÑÓĞµÄ²Ö¿âºÍÔ¶³Ì²Ö¿â¹ØÁª
-8.git checkout -b dev ----------------->´´½¨Ò»¸ö½Ğ×ödevµÄ·ÖÖ§²¢ÇĞ»»µ½¸Ã·ÖÖ§
-9.git merge dev ---------------------->°Ñdev·ÖÖ§ºÏ²¢µ½µ±Ç°·ÖÖ§
+git pull origin dev(è¿œç¨‹åˆ†æ”¯åç§°)
 
 
-gitÊ¹ÓÃ£º
- 1£ºssh-keygen-t rsa-C "your_email@youremail.com" ¸´ÖÆÕ³Ìù¹«Ô¿µ½githubµÄSSH keyÖĞ
- 2£ºgit config --global user.name "hnfsnow"
- 3£ºgit config --global user.email "1029140360@qq.com":
+
+1. git diff æ–‡ä»¶å ----------ã€‹æ¯”å¯¹è¿œç¨‹ä»“åº“ä¸­çš„è¯¥æ–‡ä»¶ä¸æœ¬åœ°çš„è¯¥æ–‡ä»¶å†…å®¹æœ‰ä»€ä¹ˆä¸åŒ
+2.git reset --hard HEAD^-------------->æŠŠç‰ˆæœ¬å›é€€åˆ°ä¸Šä¸€ä¸ªç‰ˆæœ¬  HEADè¡¨ç¤ºå½“å‰ç‰ˆæœ¬  HEAD^è¡¨ç¤ºä¸Šä¸€ä¸ªç‰ˆæœ¬  ä»¥æ­¤ç±»æ¨
+3.git reset --hard commit_id---------->æŠŠç‰ˆæœ¬å›é€€åˆ°æŸä¸€ä¸ªç‰ˆæœ¬å·
+4.git reflog ------------------------->å¯ä»¥æŸ¥çœ‹æ¯ä¸€æ¡æ‰§è¡Œè¿‡çš„logå‘½ä»¤
+5.git checkout --æ–‡ä»¶å  -------------ã€‹å¯ä»¥æŠŠåœ¨æš‚å­˜åŒºæˆ–è€…å·¥ä½œåŒºçš„ä¿®æ”¹å…¨éƒ¨æ’¤é”€
+6.git reset HEAD æ–‡ä»¶å -------------->è¡¨ç¤ºæŠŠå½“å‰ç‰ˆæœ¬æš‚å­˜åŒºçš„ä¿®æ”¹å›é€€åˆ°å·¥ä½œåŒº
+7.git remote add origin ssh://(ä»“åº“åœ°å€)----------------->æŠŠæœ¬åœ°å·²æœ‰çš„ä»“åº“å’Œè¿œç¨‹ä»“åº“å…³è”
+8.git checkout -b dev ----------------->åˆ›å»ºä¸€ä¸ªå«åšdevçš„åˆ†æ”¯å¹¶åˆ‡æ¢åˆ°è¯¥åˆ†æ”¯
+9.git merge dev ---------------------->æŠŠdevåˆ†æ”¯åˆå¹¶åˆ°å½“å‰åˆ†æ”¯
+
+
+gitä½¿ç”¨ï¼š
+ 1ï¼šssh-keygen-t rsa-C "your_email@youremail.com" å¤åˆ¶ç²˜è´´å…¬é’¥åˆ°githubçš„SSH keyä¸­
+ 2ï¼šgit config --global user.name "hnfsnow"
+ 3ï¼šgit config --global user.email "1029140360@qq.com":
 
  Access Token:ca58a58ebad9f7ce430b12275dcb099f9a9a63f7  
- pushµÄÊ±ºòĞèÒªÊäÈëÕËºÅÃÜÂë£¬ÕËºÅÊÇgithubµÄÕËºÅ£¬ÃÜÂëÊÇÕâ¸ötokens,ĞèÒªÔÚgithubµÄsetting-deloperÖĞÉèÖÃ
+ pushçš„æ—¶å€™éœ€è¦è¾“å…¥è´¦å·å¯†ç ï¼Œè´¦å·æ˜¯githubçš„è´¦å·ï¼Œå¯†ç æ˜¯è¿™ä¸ªtokens,éœ€è¦åœ¨githubçš„setting-deloperä¸­è®¾ç½®
 
 
 
